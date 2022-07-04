@@ -74,7 +74,7 @@ nav ul {
 
 /* header and nav*/
 /* mobile btn */
-span{
+button{
   background-color: transparent;
   font-size: 1.2rem;
   cursor: pointer;
@@ -82,13 +82,14 @@ span{
   display: none;
 }
 
-span i {
+button i {
   color:var(--green-sea);
 }
 
-span:hover{
-transform: rotate(90deg);
+button.rotate{ 
+  transform: rotate(90deg);
 }
+
 /* mobile btn */
 /* mobile menu */
 
@@ -117,7 +118,7 @@ width: 90vw;
     display: none;
   }
 
-  span{
+  button{
     display: block;
   }
 }
