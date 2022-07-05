@@ -244,7 +244,7 @@ img {
 /* icons */
 
 #icons{
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -265,6 +265,7 @@ footer{
   padding-inline:2rem ;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -273,20 +274,30 @@ footer li{
 }
 
 .lists{
+  width: 30rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
+.inside-list{
+  width: 12rem;
+  max-width: 12;
+  font-size: 1.5rem;
+}
+
+#newsletter{
+  align-self: flex-end;
+}
 
 #news{ 
   background-color: var(--white);
   color: var(--dark-blue);
-  width: 6rem;
+  width: 9rem;
   height: 2rem;
   border-radius: 100px;
   transition: .5s ease;
-
-  margin-top: auto;
+  margin:2rem auto 0 auto;
 }
 
 #news:hover{
@@ -334,6 +345,16 @@ footer li{
   #icons{
     justify-content: center;
     gap: 1rem;
+  }
+}
+
+@media(max-width: 320px){
+  .lists{
+    justify-content: center;
+  }
+
+  #newsletter{ 
+    margin: 0 auto;
   }
 }
 
