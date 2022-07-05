@@ -262,6 +262,7 @@ h1{
 
 /* footer */
 footer{
+  margin-top: 20rem;
   padding-inline:2rem ;
   display: flex;
   justify-content: space-between;
@@ -282,7 +283,6 @@ footer li{
 
 .inside-list{
   width: 12rem;
-  max-width: 12;
   font-size: 1.5rem;
 }
 
