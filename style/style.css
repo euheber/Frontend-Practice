@@ -30,6 +30,7 @@ header {
   overflow: hidden;
   width: 95%;
   padding-block: 40px;
+  padding-inline: 20px;
   max-width: 1360px;
   margin: 0 auto;
 }
