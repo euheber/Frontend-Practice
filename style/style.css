@@ -20,6 +20,7 @@
 
 body {
   background-color: var(--dark-blue);
+  padding-bottom: 1rem;
 }
 
 /* header and nav*/
@@ -177,25 +178,22 @@ ul li a:hover:before {
 
 /* content */
 
-#body-content {
+.body-content {
   margin: 0 auto;
   width: 95%;
 }
 
 .inside-content {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 8rem;
   max-width: 80rem;
   height: 80%;
 }
 
-
-
 img {
-  height: 100%;
-  flex: 1;
+  width: 100%;
+  max-width: 70rem;
 }
 
 .text {
@@ -210,10 +208,42 @@ img {
 }
 
 /* content */
+/* ourjob */
+
+.job-content{
+  margin: 0 auto  ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.job-content img{
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 1rem;
+}
+.job-content h1{ 
+  margin-bottom: 1rem;
+}
+
+.ourjob{
+  max-width: 60rem;
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+/* ourjob */
 
 /* media querie */
 
 @media (max-width:1024px){ 
+
+  html{
+    font-size: 80%;
+  }
   .inside-content{
     flex-direction: column;
   }
@@ -230,6 +260,10 @@ img {
 }
 
 @media(max-width:540px){
+
+  html{
+    font-size: 70%;
+  }
 
   nav {
     display: none;
