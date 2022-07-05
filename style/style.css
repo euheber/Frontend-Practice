@@ -73,6 +73,10 @@ ul li a:hover:before {
   opacity: 1;
 }
 
+.alt-btn{
+  margin: 1rem auto 0 auto;
+}
+
 /* header and nav*/
 /* mobile btn */
 #mobileBtn {
@@ -130,9 +134,7 @@ ul li a:hover:before {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
-
   max-width: 45rem;
-  border: 1px solid red;
   margin-bottom: 1.5rem;
 }
 
@@ -212,26 +214,26 @@ img {
 /* content */
 /* ourjob */
 
-.job-content{
-  margin: 0 auto  ;
+.job-content {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+
 }
 
-.job-content img{
+.job-content img {
   width: 100%;
   max-width: 50rem;
   margin-bottom: 1rem;
 }
-.job-content h1{ 
+.job-content h1 {
   margin-bottom: 1rem;
 }
 
-.ourjob{
+.ourjob {
   max-width: 60rem;
   width: 30rem;
   margin-bottom: 1rem;
@@ -239,42 +241,100 @@ img {
 
 /* ourjob */
 
+/* icons */
+
+#icons{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* icons */
+
+/* footer */
+footer{
+  padding-inline:2rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li{ 
+  margin-top: 1rem;
+}
+
+.lists{
+  display: flex;
+  gap: 2rem;
+}
+
+
+#news{ 
+  background-color: var(--white);
+  color: var(--dark-blue);
+  width: 6rem;
+  height: 2rem;
+  border-radius: 100px;
+  transition: .5s ease;
+
+  margin-top: auto;
+}
+
+#news:hover{
+  background-color: var(--green-sea);
+}
+
+#news i{
+  color: var(--dark-blue);
+}
+/* footer */
+
 /* media querie */
 
-@media (max-width:1024px){ 
-
-  html{
+@media (max-width: 1024px) {
+  html {
     font-size: 80%;
   }
-  .inside-content{
+  .inside-content {
     flex-direction: column;
   }
 
   .img,
   img {
-    width: 100%; 
+    width: 100%;
   }
 
   .text {
     order: 2;
   }
-
 }
 
-@media(max-width:540px){
-
-  html{
+@media (max-width: 540px) {
+  html {
     font-size: 70%;
   }
 
   nav {
     display: none;
   }
-  
+
   #mobileBtn {
     display: block;
   }
 
+  #icons{
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 /* media querie */
