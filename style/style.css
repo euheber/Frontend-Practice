@@ -130,7 +130,9 @@ ul li a:hover:before {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
-  width: 80%;
+
+  max-width: 45rem;
+  border: 1px solid red;
   margin-bottom: 1.5rem;
 }
 
